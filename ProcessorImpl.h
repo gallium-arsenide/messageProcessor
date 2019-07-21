@@ -1,11 +1,11 @@
-#ifndef PROCESSORIMPL_H
-#define PROCESSORIMPL_H
+#pragma once
 
+#include "Processor.h"
 
-class ProcessorImpl
+class ProcessorImpl : public Processor
 {
 public:
-    ProcessorImpl();
+    void process(const Circle&) override;
+    void process(const Square&) override;
 };
 
-#endif // PROCESSORIMPL_H

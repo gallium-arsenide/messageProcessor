@@ -1,11 +1,12 @@
-#ifndef SOMEMESSAGE_H
-#define SOMEMESSAGE_H
+#pragma once
 
+#include <string>
+#include "ProcessableMessage.h"
 
-class SomeMessage
+class Square : public ProcessableMessage<Square>
 {
 public:
-    SomeMessage();
+    std::string name;
+    int size;
 };
 
-#endif // SOMEMESSAGE_H

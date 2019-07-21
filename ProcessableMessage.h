@@ -1,4 +1,14 @@
-#ifndef PROCESSABLEMESSAGE_H
-#define PROCESSABLEMESSAGE_H
+#pragma once
 
-#endif // PROCESSABLEMESSAGE_H
+#include "Message.h"
+#include "Processor.h"
+
+template <typename T>
+class ProcessableMessage : public Message
+{
+public:
+    void process(Processor& processor) override
+    {
+        processor.process(static_cast<T&>(*this));
+    }
+};

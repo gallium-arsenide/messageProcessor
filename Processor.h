@@ -1,11 +1,13 @@
-#ifndef PROCESOR_H
-#define PROCESOR_H
+#pragma once
 
+class Circle;
+class Square;
 
-class Procesor
+class Processor
 {
 public:
-    Procesor();
+    virtual ~Processor() = default;
+    virtual void process(const Circle&) = 0;
+    virtual void process(const Square&) = 0;
 };
 
-#endif // PROCESOR_H
