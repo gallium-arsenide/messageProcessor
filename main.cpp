@@ -2,7 +2,7 @@
 #include <vector>
 #include "Circle.h"
 #include "Square.h"
-#include "ProcessorImpl.h"
+#include "Processor.h"
 
 std::unique_ptr<Circle> makeCircle(double radius)
 {
@@ -27,7 +27,7 @@ int main()
     messages.emplace_back(makeSquare("Mike", 15));
     messages.emplace_back(makeCircle(3.14));
 
-    ProcessorImpl processor;
+    Processor processor;
 
     for (const auto& message : messages)
     {

@@ -4,7 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        ProcessorImpl.cpp \
+        Processor.cpp \
         main.cpp
 
 HEADERS += \
@@ -12,5 +12,4 @@ HEADERS += \
     Message.h \
     ProcessableMessage.h \
     Processor.h \
-    ProcessorImpl.h \
     Square.h

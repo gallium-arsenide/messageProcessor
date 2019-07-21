@@ -7,7 +7,7 @@ class Processor
 {
 public:
     virtual ~Processor() = default;
-    virtual void process(const Circle&) = 0;
-    virtual void process(const Square&) = 0;
+    void process(const Circle&);
+    void process(const Square&);
 };
 
